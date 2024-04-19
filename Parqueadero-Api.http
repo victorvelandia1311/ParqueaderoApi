@@ -1,0 +1,6 @@
+@Parqueadero_Api_HostAddress = http://localhost:5268
+
+GET {{Parqueadero_Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
