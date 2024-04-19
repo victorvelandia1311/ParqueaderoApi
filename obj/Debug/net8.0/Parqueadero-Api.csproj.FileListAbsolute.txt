@@ -102,3 +102,4 @@ C:\Users\Prosoft\Documents\c#_api\Parqueadero-Api\Parqueadero-Api\bin\Debug\net8
 C:\Users\Prosoft\Documents\c#_api\Parqueadero-Api\Parqueadero-Api\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Prosoft\Documents\c#_api\Parqueadero-Api\Parqueadero-Api\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Prosoft\Documents\c#_api\Parqueadero-Api\Parqueadero-Api\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Prosoft\Documents\c#_api\Parqueadero-Api\Parqueadero-Api\obj\Debug\net8.0\Parqueadero-Api.sourcelink.json

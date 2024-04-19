@@ -42,5 +42,19 @@ namespace Parqueadero_Api.Controllers.v1
             await context.SaveChangesAsync();
             return Ok ("Se ha actualizado correctamente");
         }
+        [HttpDelete("{id_vehiculo:int}")]
+        public async Task<ActionResult> DeleteVehiculos(int id_vehiculo)
+        {
+            var db_vehiculos = await context.VEHICULO.AnyAsync(c => c.id_vehiculo == id_vehiculo);
+
+            if(!db_vehiculos)
+            {
+                return NotFound("No existe ese vehículo con ese codigo");
+            }
+
+            context.Remove(new VEHICULOS() {id_vehiculo = id_vehiculo});
+            await context.SaveChangesAsync();
+            return Ok("Se ha eliminado el vehículo correctamente");
+        }
     }
 }
