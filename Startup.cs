@@ -22,7 +22,6 @@ namespace Parqueadero_Api
 
             services.AddDbContext<DataContext>(options =>
             {
-                // options.UseLazyLoadingProxies();
                 options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"));
             });
 
