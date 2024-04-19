@@ -17,13 +17,13 @@ namespace Parqueadero_Api.Controllers.v1
             this.context = context;
         }
         [HttpGet]
-        public async Task<ActionResult<List<VEHICULOS>>> Get()
+        public async Task<ActionResult<List<VEHICULO>>> Get()
         {
-           return await context.VEHICULO.ToListAsync();
+           return await context.VEHICULOS.ToListAsync();
         }
 
         [HttpPost]
-        public async Task<ActionResult> PostVehiculos(VEHICULOS vehiculo)
+        public async Task<ActionResult> PostVehiculos(VEHICULO vehiculo)
         {
             context.Add(vehiculo);
             await context.SaveChangesAsync();
@@ -31,7 +31,7 @@ namespace Parqueadero_Api.Controllers.v1
         }
 
         [HttpPut("{id_vehiculo:int}")]
-        public async Task<ActionResult> EditVehiculos(VEHICULOS vehiculo, int id_vehiculo)
+        public async Task<ActionResult> EditVehiculos(VEHICULO vehiculo, int id_vehiculo)
         {
             if(vehiculo.id_vehiculo != id_vehiculo)
             {
@@ -45,14 +45,14 @@ namespace Parqueadero_Api.Controllers.v1
         [HttpDelete("{id_vehiculo:int}")]
         public async Task<ActionResult> DeleteVehiculos(int id_vehiculo)
         {
-            var db_vehiculos = await context.VEHICULO.AnyAsync(c => c.id_vehiculo == id_vehiculo);
+            var db_vehiculos = await context.VEHICULOS.AnyAsync(c => c.id_vehiculo == id_vehiculo);
 
             if(!db_vehiculos)
             {
-                return NotFound("No existe ese vehículo con ese codigo");
+                return NotFound("No existe ese vehículo con ese código");
             }
 
-            context.Remove(new VEHICULOS() {id_vehiculo = id_vehiculo});
+            context.Remove(new VEHICULO() {id_vehiculo = id_vehiculo});
             await context.SaveChangesAsync();
             return Ok("Se ha eliminado el vehículo correctamente");
         }

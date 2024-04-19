@@ -7,7 +7,7 @@ namespace Parqueadero_Api.Data
     {
         public DataContext(DbContextOptions options) : base(options) { }
 
-        public DbSet<VEHICULOS> VEHICULO { get; set; }
+        public DbSet<VEHICULO> VEHICULOS { get; set; }
     }
 
     

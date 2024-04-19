@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Parqueadero-Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5b906cc70f1587d29752170a69b3b39233d3cfd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77b6d368f2700b7c1c7b1f59c22e80cc730a01db")]
 [assembly: System.Reflection.AssemblyProductAttribute("Parqueadero-Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Parqueadero-Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
