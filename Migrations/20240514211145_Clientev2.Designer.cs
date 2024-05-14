@@ -36,8 +36,8 @@ namespace Parqueadero_Api.Migrations
                     b.Property<int?>("VEHICULOid_vehiculo")
                         .HasColumnType("integer");
 
-                    b.Property<int>("apellido_cliente")
-                        .HasColumnType("integer");
+                    b.Property<string>("apellido_cliente")
+                        .HasColumnType("string");
 
                     b.Property<int>("cedula_cliente")
                         .HasColumnType("integer");
@@ -45,8 +45,8 @@ namespace Parqueadero_Api.Migrations
                     b.Property<int>("id_vehiculo")
                         .HasColumnType("integer");
 
-                    b.Property<int>("nombre_cliente")
-                        .HasColumnType("integer");
+                    b.Property<string>("nombre_cliente")
+                        .HasColumnType("string");
 
                     b.HasKey("id_cliente");
 
