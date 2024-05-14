@@ -19,7 +19,7 @@ namespace Parqueadero_Api.Controllers.v1
         [HttpGet]
         public async Task<ActionResult<List<VEHICULO>>> Get()
         {
-           return await context.VEHICULO.ToListAsync();
+           return await context.VEHICULO.Include(x => x.CLIENTE).ToListAsync();
         }
 
         [HttpPost]
