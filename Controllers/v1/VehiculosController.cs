@@ -19,7 +19,7 @@ namespace Parqueadero_Api.Controllers.v1
         [HttpGet]
         public async Task<ActionResult<List<VEHICULO>>> Get()
         {
-           return await context.VEHICULOS.ToListAsync();
+           return await context.VEHICULO.ToListAsync();
         }
 
         [HttpPost]
@@ -45,7 +45,7 @@ namespace Parqueadero_Api.Controllers.v1
         [HttpDelete("{id_vehiculo:int}")]
         public async Task<ActionResult> DeleteVehiculos(int id_vehiculo)
         {
-            var db_vehiculos = await context.VEHICULOS.AnyAsync(c => c.id_vehiculo == id_vehiculo);
+            var db_vehiculos = await context.VEHICULO.AnyAsync(c => c.id_vehiculo == id_vehiculo);
 
             if(!db_vehiculos)
             {

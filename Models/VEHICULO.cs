@@ -9,5 +9,7 @@ namespace Parqueadero_Api.Models
         public string tipo_vehiculo { get; set; }
         public string placa_vehiculo { get; set; }
         public double valor_vehiculo { get; set; }
+        public List<CLIENTE> CLIENTE { get; set; }
+
     }
 }

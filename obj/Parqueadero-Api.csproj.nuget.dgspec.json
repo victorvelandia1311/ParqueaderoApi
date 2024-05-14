@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Prosoft\\Documents\\c#_api\\Parqueadero-Api\\Parqueadero-Api\\Parqueadero-Api.csproj": {}
+    "C:\\Users\\Prosoft\\Documents\\Parqueadero\\ParqueaderoApi\\Parqueadero-Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Prosoft\\Documents\\c#_api\\Parqueadero-Api\\Parqueadero-Api\\Parqueadero-Api.csproj": {
+    "C:\\Users\\Prosoft\\Documents\\Parqueadero\\ParqueaderoApi\\Parqueadero-Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Prosoft\\Documents\\c#_api\\Parqueadero-Api\\Parqueadero-Api\\Parqueadero-Api.csproj",
+        "projectUniqueName": "C:\\Users\\Prosoft\\Documents\\Parqueadero\\ParqueaderoApi\\Parqueadero-Api.csproj",
         "projectName": "Parqueadero-Api",
-        "projectPath": "C:\\Users\\Prosoft\\Documents\\c#_api\\Parqueadero-Api\\Parqueadero-Api\\Parqueadero-Api.csproj",
+        "projectPath": "C:\\Users\\Prosoft\\Documents\\Parqueadero\\ParqueaderoApi\\Parqueadero-Api.csproj",
         "packagesPath": "C:\\Users\\Prosoft\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Prosoft\\Documents\\c#_api\\Parqueadero-Api\\Parqueadero-Api\\obj\\",
+        "outputPath": "C:\\Users\\Prosoft\\Documents\\Parqueadero\\ParqueaderoApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Prosoft\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -53,6 +57,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.5.2, )"
             }
           },
           "imports": [
