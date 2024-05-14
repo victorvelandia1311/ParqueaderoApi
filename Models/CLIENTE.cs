@@ -6,8 +6,8 @@ namespace Parqueadero_Api.Models
     {
         [Key]
         public int id_cliente { get; set; }
-        public int nombre_cliente { get; set; }
-        public int apellido_cliente { get; set; }
+        public string nombre_cliente { get; set; }
+        public string apellido_cliente { get; set; }
         public int cedula_cliente { get; set; }
         public int id_vehiculo { get; set; }
         public VEHICULO VEHICULO { get; set; }
